@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="/index.css">
+    <script src="/index.js"></script>
+
+    <title>HJ's Portfolio</title>
+</head>
+
+<body>
+    <!-- 상단 navbar -->
+    <navbar>
+        <div class="navContainer">
+            <div class="home">
+                <a href="/index.html"><img id="home_icon" src="/image/home_icon.png"></a>
+            </div>
+
+            <div id="submenu">
+                <ul>
+                    <li><a href="#">Introduction</a>
+                        <ul>
+                            <!-- 이력서 열람할때 아이디, 비밀번호 입력  -->
+                            <li><a href="/Introduction/resume.html" onclick="return authenticate()">이력서</a></li>
+                            <li><a href="/Introduction/self_intro.html">자기소개서</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Career</a>
+                        <ul>
+                            <li><a href="/Career/capability.html">개인 역량</a></li>
+                            <li><a href="/Career/certificate.html">자격증</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Project</a>
+                        <ul>
+                            <li><a href="/Project/project1.html">p-실무 프로젝트</a></li>
+                            <li><a href="/Project/project2.html">졸업 프로젝트</a></li>
+                            <li><a href="/Project/project3.html">개인 프로젝트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Study</a>
+                        <ul>
+                            <li><a href="/Study/time_table.html">시간표</a></li>
+                            <li><a href="/Study/study_record.html">공부 기록</a></li>
+                            <li><a href="/Study/grade_calc.html">학점계산기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Hobby</a>
+                        <ul>
+                            <li><a href="/Hobby/cook.html">요리 하기</a></li>
+                            <li><a href="/Hobby/photo.html">사진 찍기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+    </navbar>
+
+
+    <main>
+        <!-- 메인 자기소개 -->
+
+        <div class="mainImgContainer">
+            <img id="mainImg" src="/image/wave_edit.jpeg" alt="Main Image">
+            <div class="centeredText">
+                My Portfolio Page
+                <div id="centeredText_kor">전희정의 포트폴리오 페이지</div>
+            </div>
+        </div>
+
+        <!-- 본문 -->
+        <div class="horizontal-line"></div>
+        <div class="content_title">
+            <br>
+            <h3>도전하는 개발자 전희정입니다.</h3>
+            <h1>About Me</h1>
+        </div>
+
+        <div class="content">
+            <div class="leftText">
+                <!-- 프로필 이미지 -->
+                <div class="image_block">
+                    <img id="my_photo" src="/image/myPhoto.jpg">
+                </div>
+                <div class="content_name_kor">
+                    전희정
+                </div>
+                <div class="content_name_eng">
+                    Heejung Jeon
+                </div>
+
+                <div class="content_icon_block">
+                    <img class="content_icon" src="/image/tel_icon.png">
+                    010-5756-6674
+                </div>
+                <div class="content_icon_block">
+                    <img class="content_icon" src="/image/email_icon.png">
+                    i_am_heej@naver.com
+                </div>
+                <div class="content_icon_block">
+                    <img class="content_icon" src="/image/location_icon.png">
+                    가천대학교, AI 공학관
+                </div>
+                <div class="content_icon_block">
+                    <img class="content_icon" src="/image/web_icon.png">
+                    <a href="https://blog.naver.com/devheej">https://blog.naver.com/devheej</a>
+                </div>
+                
+            </div>
+            <div class="separator"></div>
+            <div class="rightText">
+                <p>&nbsp;&nbsp;제 개발 경험은 프론트엔드, 백엔드, 그리고 AI 모델 개발에 걸쳐 광범위하게 이루어졌습니다.
+                    프론트엔드 개발에서는 Flutter와 React를 활용하여 다양한 사용자 인터페이스를 구현해 왔으며,
+                    백엔드 개발 측면에서는 Spring Boot를 이용하여 안정적이고 확장 가능한 서버 시스템을 구축해 왔습니다.
+                    또한, 자연어 처리를 포함한 AI 모델 개발에도 경험이 있으며,
+                    특히 언어 모델과 텍스트 데이터 분석을 기반으로 한 다양한 프로젝트를 수행해 왔습니다.
+                </p>
+                <p>&nbsp;&nbsp;저는 다양한 팀과의 협업 경험을 바탕으로 팀 내에서 리더십을 발휘해 온 경험이 있습니다.
+                    특히 팀장으로서의 역할을 수행하며 프로젝트를 이끌어가는 데 필요한 조직적 능력과 의사소통 능력을 갖추고 있습니다.
+                    이를 통해 팀원들과의 협력을 최대화하고 프로젝트 목표를 성취한 경험을 바탕으로
+                    다양한 도전과제에 대응할 준비가 되어 있습니다.
+                </p>
+                <p>함께 일할 기회를 기다리고 있습니다.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- 문의 항목 -->
+        <div class="horizontal-line"></div>
+        <div class="contact_form">
+            <div class="content">
+                <div class="leftText">
+                    <br>
+                    <h2>문의하기</h2><br>
+                    <p>오른쪽의 폼을 작성하여 저에게 문의를 남기실 수 있습니다.
+                        또는 위 항목에 작성된 메일과 SNS*로 연락을 보내실 수도 있습니다.
+                    </p>
+                    <p>*하단 SNS 이미지를 클릭하시면 저의 개인 SNS 링크로 연결됩니다.</p>
+                </div>
+                <!-- <div class="separator"></div> -->
+                <!-- <div class="rightText">
+                    <p>From Russia with Love connects the subversive art of Russian criminal tattoos with traditional Russian blue porcelain design, uniting two opposed but equally important and influential strands of Russian art history. All ceramic plates are handmade, and illustrated by hand with drawings from the Russian prison. Just like a hand made tattoo on the skin, each unique plate is hand crafted and there is no second to it.</p>
+                </div> -->
+                <div class="rightText">
+                    <div class="contact-form-box">
+                        <form class="contact-form" action="contactForm.jsp" method="get">
+                            <!-- 이름, 소속, 이메일, 문의내용, 등등 라디오박스랑 드롭박스 등 사용하기 -->
+                            <input type="text" placeholder="이름" class="input-box" required>
+                            <select class="input-box" required>
+                                <option value="" disabled selected>직업</option>
+                                <option value="학생">학생</option>
+                                <option value="주부">주부</option>
+                                <option value="교직원">교직원</option>
+                                <option value="직장인">직장인</option>
+                                <option value="자영업자">자영업자</option>
+                                <option value="기타">기타</option>
+                            </select>
+                            <input type="email" placeholder="이메일" class="input-box" required>
+                            <input type="tel" placeholder="전화번호" class="input-box">
+                            <textarea placeholder="메시지를 입력하세요." class="input-box" rows="5"></textarea>
+
+                            <br>
+                            <div id="agree">개인정보 활용에 동의하십니까?</div>
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="agree_check" value="agree_check">
+                                <label for="agree_check" id="I_agree">동의합니다.</label>
+                            </div>
+
+                            <!-- <br><div id="agree">개인정보 활용에 동의하십니까?</div>
+                            <input type="checkbox" value="agree_check">동의합니다. -->
+
+                            <button type="submit" class="submit-button" onclick="showAlert()">제출</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+    <!-- 하단 footer -->
+    <footer>
+        <div class="footContainer">
+            <div id="foottitle">CONTACT</div> <br />
+            <div>
+                E-mail : i_am_heej@naver.com<br />
+                Tel : 010-5756-6674<br />
+                SNS :<br />
+                <a class="footlink" href="https://blog.naver.com/devheej">
+                    <img src="/image/blog3.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.instagram.com/">
+                    <img src="/image/instagram.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.facebook.com/jhj100453">
+                    <img src="/image/facebook.png" alt=""></img></a>
+            </div>
+            <br />
+            <hr />
+            <div>Copyright 2024. 전희정 All rights reserved.</div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
