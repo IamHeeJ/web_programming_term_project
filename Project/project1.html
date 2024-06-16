@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="/index.css">
+    <link type="text/css" rel="stylesheet" href="/Project/project1.css">
+    <script src="/index.js"></script>
+    <title>P실무프로젝트 페이지</title>
+</head>
+
+<body>
+    <!-- 상단 navbar -->
+    <navbar>
+        <div class="navContainer">
+            <div class="home">
+                <a href="/index.html"><img id="home_icon" src="/image/home_icon.png"></a>
+            </div>
+
+            <div id="submenu">
+                <ul>
+                    <li><a href="#">Introduction</a>
+                        <ul>
+                            <!-- 이력서 열람할때 아이디, 비밀번호 입력  -->
+                            <li><a href="/Introduction/resume.html" onclick="return authenticate()">이력서</a></li>
+                            <li><a href="/Introduction/self_intro.html">자기소개서</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Career</a>
+                        <ul>
+                            <li><a href="/Career/capability.html">개인 역량</a></li>
+                            <li><a href="/Career/certificate.html">자격증</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Project</a>
+                        <ul>
+                            <li><a href="/Project/project1.html">p-실무 프로젝트</a></li>
+                            <li><a href="/Project/project2.html">졸업 프로젝트</a></li>
+                            <li><a href="/Project/project3.html">개인 프로젝트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Study</a>
+                        <ul>
+                            <li><a href="/Study/time_table.html">시간표</a></li>
+                            <li><a href="/Study/study_record.html">공부 기록</a></li>
+                            <li><a href="/Study/grade_calc.html">학점계산기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Hobby</a>
+                        <ul>
+                            <li><a href="/Hobby/cook.html">요리 하기</a></li>
+                            <li><a href="/Hobby/photo.html">사진 찍기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+    </navbar>
+
+    <main>
+        <div class="project1">
+            <div class="title">
+                <div class="sub_title">p-실무 프로젝트</div>
+                <h1 class="main_title">ChatGPT를 활용한 작문 교정 서비스 개발</h1>
+            </div>
+            
+            
+            <div class="image_group">
+                <img id="VOS1" src="/image/project_image/VOS1.PNG">
+                <img id="VOS2" src="/image/project_image/VOS2.PNG">
+                <img id="VOS3" src="/image/project_image/VOS3.PNG">
+                <img id="VOS4" src="/image/project_image/VOS4.PNG">
+            </div>
+            <div id="gray-font">이미지에 마우스를 올리면 확대됩니다.</div>
+            
+
+            <fieldset>
+              <legend>프로젝트 개요</legend>
+              <ol>
+                <li class="ol1">서비스 개요</li>
+                <ul>
+                  <li>가천대학교 학생들이 게시판 형식으로 자유롭게 건의 사항을 작성</li>
+                  <li>AI 필터링 기능으로 게시글을 자동 수정하여 건의 사항을 게시하는 서비스 개발</li>
+                  <li>학생회, 각 행정부, 학생 복지팀 등이 관리자로써 건의사항을 처리하고 게시판을 관리함</li>
+                  <li>AI 챗봇 브리핑 & 해결방안 추천 서비스로 게시판 관리를 도움</li>
+                </ul><br />
+      
+                <li class="ol2">시스템 프로세스</li>
+                <ul>
+                  <li>사용자가 건의글을 작성하고 Chatgpt에게 전달하여 필터링 후 서버를 통해 DB에 건의글이 저장</li>
+                  <li>관리자는 건의게시판 상황에 대해 브리핑과 해결방안 추천을 ChatGPT에게 요청</li>
+                  <li>DB에서 게시글 정보를 가져와 Chatgpt가 관리자에게 브리핑 수행</li>
+                  <li>관리자는 건의를 처리하고 답변을 작성하면 사용자에게 전달</li>
+                  <li>사용자와 관리자는 프로세스와 상관없이 게시판을 통해 언제든 건의글 조회</li>
+                </ul><br />
+      
+                <li class="ol3">AI 브리핑 - 프롬프트 입력</li>
+                <ul>
+                  <li>db에서 posts의 process_state가 “처리대기”인 데이터들의 title만 가지고 와서 주요 내용들이 어떤지 간단히 요약</li>
+                  <li>전반적인 여론을 분석하도록 입력 구조를 구성</li>
+                </ul><br />
+      
+                <li class="ol4">AI 브리핑 - 예측 결과 출력</li>
+                <ul>
+                  <li>브리핑 결과로 일정한 폼을 갖추게 하기 위해 컨트롤러에서 다음과 같은 형식을 추가</li>
+                  <li>미처리된 건의글의 개수를 DB에서 세어와서 아래 화면과 같이 브리핑 내용 앞쪽에 출력</li>
+                  <li>“미처리된 건의글에 대해 간략히 설명하자면, “ 뒤에는 앞 페이지에서 요청받은 질문에 대한 대답 츌력</li>
+                  <li>이런 과정을 거친 최종 브리핑 출력 형태는 아래 화면과 같이 나타남</li>
+      
+                </ul>
+              </ol>
+            </fieldset>
+          </div>
+      
+    </main>
+    
+
+    <!-- 하단 footer -->
+    <footer>
+        <div class="footContainer">
+            <div id="foottitle">CONTACT</div> <br />
+            <div>
+                E-mail : i_am_heej@naver.com<br />
+                Tel : 010-5756-6674<br />
+                SNS :<br />
+                <a class="footlink" href="https://blog.naver.com/devheej">
+                    <img src="/image/blog3.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.instagram.com/">
+                    <img src="/image/instagram.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.facebook.com/jhj100453">
+                    <img src="/image/facebook.png" alt=""></img></a>
+            </div>
+            <br />
+            <hr />
+            <div>Copyright 2024. 전희정 All rights reserved.</div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.resume {
+    border: 1px dotted rgb(140, 148, 180);
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 자동 여백으로 수평 정렬 */
+    margin-top : 50px;
+    padding: 40px; /* 내부 패딩 */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 170px;
+}
+/* 이력서 테이블 */
+.resume_table {
+    /* border: 1px dotted rgb(136, 145, 180); */
+    border-collapse: collapse; /* 중복 테두리 제거 */
+    /* width: 50%; */
+    width: 100%; /* 테이블을 div의 너비에 맞추기 */
+    text-align: center;
+    /* margin: 0 auto;  */
+}
+
+.resume_table td, .resume_table th {
+    border: 1px solid rgb(119, 125, 150);/* 테두리 설정 */
+    padding: 10px; /* 셀 패딩 설정 */
+}
+
+#resume_img {
+    width: 150px;
+}
+
+.td_title {
+    font-weight: bold; /* 제목 셀의 글자 굵게 */
+    text-align: center;
+    background-color: #cdd4e0;
+}
+
+.resume > h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#pledge {
+    text-align: right;
+    margin : 20px;
+}
+#td_img {
+    background-color: white;
+}

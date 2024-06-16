@@ -1,0 +1,68 @@
+.selfIntro {
+    border: 1px dotted rgb(140, 148, 180);
+    border-radius: 25px;
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 자동 여백으로 수평 정렬 */
+    margin-top : 200px;
+    padding: 40px; /* 내부 패딩 */
+    position: relative;
+}
+
+.selfIntro > h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.selfIntro > .division {
+    margin-bottom: 100px;
+}
+.division_title {
+    margin-bottom: 10px;
+    border: 1px solid rgb(176, 189, 207);
+    border-radius: 15px;
+    padding: 6px;
+    text-align: center;
+    background-color: rgb(214, 221, 231);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.selfP {
+    line-height: 200%;
+    max-width: 700px;
+    margin: 0 auto; 
+}
+/* 책갈피를 위한 공통 스타일 */
+a[name] {
+    display: block;
+    position: relative;
+    scroll-margin-top: 200px; /*여유 공간 크기 */
+}
+
+
+/* 북마크 효과 */
+.bookmark {
+    position: absolute; 
+    left: 0; 
+    right: 0;
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    background-color: rgb(176, 189, 207); /* 배경색 설정 */
+    padding: 10px 0; /* 상하 패딩 설정 */
+}
+
+.bookmark span {
+    margin: 0 15px; /* 좌우 마진 설정 */
+}
+
+.bookmark a {
+    color: white; /* 글자색 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    padding: 10px 15px; /* 내부 패딩 설정 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    transition: background-color 0.3s; /* 호버 효과 전환 설정 */
+}
+
+.bookmark a:hover {
+    background-color: rgb(192, 205, 224); /* 호버 시 배경색 설정 */
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="/index.css">
+    <link type="text/css" rel="stylesheet" href="/Project/project2.css">
+    <script src="/index.js"></script>
+    <title>졸업프로젝트 페이지</title>
+</head>
+
+<body>
+    <!-- 상단 navbar -->
+    <navbar>
+        <div class="navContainer">
+            <div class="home">
+                <a href="/index.html"><img id="home_icon" src="/image/home_icon.png"></a>
+            </div>
+
+            <div id="submenu">
+                <ul>
+                    <li><a href="#">Introduction</a>
+                        <ul>
+                            <!-- 이력서 열람할때 아이디, 비밀번호 입력  -->
+                            <li><a href="/Introduction/resume.html" onclick="return authenticate()">이력서</a></li>
+                            <li><a href="/Introduction/self_intro.html">자기소개서</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Career</a>
+                        <ul>
+                            <li><a href="/Career/capability.html">개인 역량</a></li>
+                            <li><a href="/Career/certificate.html">자격증</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Project</a>
+                        <ul>
+                            <li><a href="/Project/project1.html">p-실무 프로젝트</a></li>
+                            <li><a href="/Project/project2.html">졸업 프로젝트</a></li>
+                            <li><a href="/Project/project3.html">개인 프로젝트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Study</a>
+                        <ul>
+                            <li><a href="/Study/time_table.html">시간표</a></li>
+                            <li><a href="/Study/study_record.html">공부 기록</a></li>
+                            <li><a href="/Study/grade_calc.html">학점계산기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Hobby</a>
+                        <ul>
+                            <li><a href="/Hobby/cook.html">요리 하기</a></li>
+                            <li><a href="/Hobby/photo.html">사진 찍기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+    </navbar>
+
+    <main>
+        <div class="project2">
+            <div class="title">
+                <div class="sub_title">졸업 프로젝트</div>
+                <h1 class="main_title">대화 감정 분석 NLP 기술을 활용한<br>커플 채팅 서비스 개발</h1>
+            </div>
+            
+            <!-- 이미지 그룹 -->
+            <div class="image_group">
+                <img id="LUVREED1" src="/image/project_image/LUVREED1.PNG">
+                <img id="LUVREED2" src="/image/project_image/LUVREED2.PNG">
+                <img id="LUVREED3" src="/image/project_image/LUVREED3.PNG">
+                <img id="LUVREED4" src="/image/project_image/LUVREED4.PNG">
+                <img id="LUVREED5" src="/image/project_image/LUVREED5.PNG">
+                <img id="LUVREED6" src="/image/project_image/LUVREED6.PNG">
+            </div>
+            <div id="gray-font">이미지에 마우스를 올리면 확대됩니다.</div>
+            <br><br><br><br><br>
+            
+
+            <!-- 영상 -->
+            <div class="video_group">
+
+                <h2>사용자 App 화면 영상</h2>
+                <video id="luvreed_user" src="/video/Luvreed_video.mp4" controls></video>
+                <br><br><br>
+                <h2>관리자 Web 화면 영상</h2>
+                <video id="luvreed_admin" src="/video/Luvreed_video2.mp4" controls></video>
+    
+            </div>
+            
+            <br><br><br>
+
+            <!-- 설명 -->
+            <fieldset>
+              <legend>프로젝트 개요</legend>
+              <ol>
+                <li class="ol1">서비스 개요</li>
+                <ul>
+                  <li>두 사람의 채팅 내용을 AI 감정 분석하여
+                    펫을 성장시키는 재미 요소와 목표 의식을 부여하여
+                   연인 간의 다정한 대화 습관을 유도하는 커플 채팅 서비스</li>
+                   <li>서비스 명칭은 영단어 love와 breed를 합친 “러브리드(Luvreed)”로 선정</li>
+                </ul><br />
+      
+                <li class="ol2">서비스 시나리오</li>
+                <ul>
+                  <li>두 사용자가 채팅을 입력하면 실시간으로 AI 감정을 분류</li>
+                  <li>누적된 행복 데이터로 오른쪽처럼 펫이 성장</li>
+                  <li>DB에 저장된 통계 데이터로 왼쪽처럼 감정 분석 통계와 피드백 제공</li>
+                  <li>관리자는 건의를 처리하고 답변을 작성하면 사용자에게 전달</li>
+                  <li>사용자와 관리자는 프로세스와 상관없이 게시판을 통해 언제든 건의글 조회</li>
+                </ul><br />
+      
+                <li class="ol3">데이터 전처리</li>
+                <ul>
+                  <li>AI 허브에서 “연속적 대화”, “감정 분류 대화“ 데이터셋 두가지를 수집</li>
+                  <li>아래 예시처럼 각 문장 당 감정이 레이블링된 데이터셋으로 구성</li>
+                  <li>전처리에 앞서 두 데이터셋의 레이블을 통합하여 최종 레이블 7가지(중립,행복,분노,놀람,슬픔,짜증,불안) 선정</li>
+                  <li>모든 데이터는 중복 값과 공백을 제거하는 정제 과정을 수행</li>
+                  <li>그래프 불균형을 해소하기 위해  ‘연속적 대화 데이터 셋’ 에서 데이터가 부족한 레이블 4개(‘행복’, ‘짜증’, ‘불안’, ‘놀람’)를 통합해서 보충</li>
+                  <li>학습을 충분히 수행할 수 있도록 데이터 개수를 늘리기 위해 데이터를 증강</li>
+                  <ul>
+                    <li>Random Masking Replacement : 무작위로 문장의 단어를 비슷한 문맥의 단어로 변경</li>
+                    <li>Random Masking Insertion : 무작위로 문장의 문맥에 맞는 단어 추가</li>
+                  </ul>
+                  <li>채팅 대화체, 호칭, 단답형 단어, 비속어, 은어 등의 문장을 직접 레이블링한 커스텀 데이터 셋을 추가</li>          
+                </ul><br />
+      
+                <li class="ol4">AI 모델 학습</li>
+                <ul>
+                  <li>모델 학습에 앞서 다음 한국어에 특화된 4개 언어 모델(koBERT, kcBERT, koRoBERTa, koELECTRA)을 테스트 </li>
+                  <li>테스트 결과, 정확도는 koELECTRA가 93%, koBERT가 87% 순으로 높았고, 예측 수행 결과 또한 두 모델이 비교적 우수한 성능을 보임</li>
+                  <li>모델 선정 기준으로 Accuracy와 Predict 체감 성능, 서버 배포의 용이성을 고려</li>
+                  <li>최신형 모델로서 BERT기반 모델에 비해 같은 학습량으로도 정확도가 높고, 예측 수행이 빨라 채팅 앱 특성에 적합한 koELECTRA를 서비스에 활용할 모델로 선정</li>
+                </ul><br />
+
+                <li class="ol5">펫 경험치 시스템</li>
+                <ul>
+                    <li>회원가입 시 초기 사용자에게 4개의 알 기본 지급</li>
+                    <li>성장시킬 펫을 선택하여 “행복” 빈도수로 경험치를 높여 성장</li>
+                    <li>펫은 대화 감정 분류에 따라 3가지(긍정, 중립, 부정) 상태 표시</li>
+                    <li>감정 레이블이 ‘행복’일 때 경험치가 2씩 증가</li>
+                    <li>펫의 성장단계는 경험치 값에 따라 5단계로 구성</li>
+                </ul><br />
+
+                <li class="ol6">통계 시스템</li>
+                <ul>
+                    <li>통계 시스템은 두 사용자 각각의 감정 분석 결과를 바탕으로 일일, 일주일, 한달 통계 3가지 통계 시스템 제공</li>
+                    <li>전날 하루의 전체 감정 레이블 중 행복 레이블의 비율을 기준으로 4가지(좋음,양호,나쁨,데이터부족) 피드백 제공</li>
+                    <li>일주일, 한달 동안의 행복 레이블의 개수의 평균 변화율을 계산하여 3가지(증가,감소,불안정) 피드백 제공</li>
+                </ul><br />
+
+              </ol>
+            </fieldset>
+          </div>
+      
+    </main>
+    
+
+    <!-- 하단 footer -->
+    <footer>
+        <div class="footContainer">
+            <div id="foottitle">CONTACT</div> <br />
+            <div>
+                E-mail : i_am_heej@naver.com<br />
+                Tel : 010-5756-6674<br />
+                SNS :<br />
+                <a class="footlink" href="https://blog.naver.com/devheej">
+                    <img src="/image/blog3.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.instagram.com/">
+                    <img src="/image/instagram.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.facebook.com/jhj100453">
+                    <img src="/image/facebook.png" alt=""></img></a>
+            </div>
+            <br />
+            <hr />
+            <div>Copyright 2024. 전희정 All rights reserved.</div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

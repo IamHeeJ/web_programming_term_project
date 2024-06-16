@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="/index.css">
+    <link type="text/css" rel="stylesheet" href="/Hobby/cook.css">
+    <script src="/index.js"></script>
+    <title>요리하기 페이지</title>
+</head>
+
+<body>
+    <!-- 상단 navbar -->
+    <navbar>
+        <div class="navContainer">
+            <div class="home">
+                <a href="/index.html"><img id="home_icon" src="/image/home_icon.png"></a>
+            </div>
+
+            <div id="submenu">
+                <ul>
+                    <li><a href="#">Introduction</a>
+                        <ul>
+                            <!-- 이력서 열람할때 아이디, 비밀번호 입력  -->
+                            <li><a href="/Introduction/resume.html" onclick="return authenticate()">이력서</a></li>
+                            <li><a href="/Introduction/self_intro.html">자기소개서</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Career</a>
+                        <ul>
+                            <li><a href="/Career/capability.html">개인 역량</a></li>
+                            <li><a href="/Career/certificate.html">자격증</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Project</a>
+                        <ul>
+                            <li><a href="/Project/project1.html">p-실무 프로젝트</a></li>
+                            <li><a href="/Project/project2.html">졸업 프로젝트</a></li>
+                            <li><a href="/Project/project3.html">개인 프로젝트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Study</a>
+                        <ul>
+                            <li><a href="/Study/time_table.html">시간표</a></li>
+                            <li><a href="/Study/study_record.html">공부 기록</a></li>
+                            <li><a href="/Study/grade_calc.html">학점계산기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Hobby</a>
+                        <ul>
+                            <li><a href="/Hobby/cook.html">요리 하기</a></li>
+                            <li><a href="/Hobby/photo.html">사진 찍기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+    </navbar>
+
+
+    <main>
+        <div class="cook">
+            <h1>요리 하기</h1>
+            <hr><br><br><br><br>
+
+            <!-- 레시피 -->
+            <div class="content-container">
+                <!-- 요리 영상 -->
+                <div class="cooking_video">
+                    <video id="luvreed_user" src="/video/cooking_video.mp4" controls></video>
+                </div>
+                <!-- 레시피 -->
+                <div class="recipe-container">
+                    <h1>투움바 라면 레시피</h1>
+                    <div class="recipe">
+                        <h2>재료</h2>
+                        <div class="ingredient_div">
+                            <div><input type="checkbox">&nbsp;&nbsp;진짬뽕 1개</div>
+                            <div><input type="checkbox">&nbsp;&nbsp;다진마늘</div>
+                            <div><input type="checkbox">&nbsp;&nbsp;치즈</div>
+                            <div><input type="checkbox">&nbsp;&nbsp;양파</div>
+                            <div><input type="checkbox">&nbsp;&nbsp;휘핑크림 or 생크림</div>
+                        </div>
+
+                        <h2>조리 방법</h2>
+                        <ol>
+                            <li>라면을 꼬들거릴 정도로 살짝 삶습니다.</li>
+                            <li>후라이팬에 양파와 다진마늘을 넣고 볶습니다.</li>
+                            <li>휘핑크림 또는 생크림, 치즈, 후레이크를 넣고 끓입니다.</li>
+                            <li>액상 스프는 반만 넣습니다.</li>
+                            <li>국물이 쫄기 시작하면 후첨 소스를 곁들이고 맛있게 먹습니다</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 내 음식사진들(바둑판형식) -->
+            <br><br><br><br><br><br><br>
+            <blockquote class="quote">
+                <p>" 전희정 씨의 요리는 정말 최고입니다. ★★★★★ "</p>
+                <footer>- 이탈리아의 유명한 미슐랭 요리사 Francesco의 인터뷰</footer>
+            </blockquote>
+            
+            <div class="food_album">
+                <img src="/image/food_image/IMG_0663.JPEG">
+                <img src="/image/food_image/IMG_1039.JPEG">
+                <img src="/image/food_image/IMG_1627.JPEG">
+                <img src="/image/food_image/IMG_2833.JPEG">
+                <img src="/image/food_image/IMG_3395.JPEG">
+                <img src="/image/food_image/IMG_4110.JPEG">
+                <img src="/image/food_image/IMG_4594.JPEG">
+                <img src="/image/food_image/IMG_4669.JPEG">
+                <img src="/image/food_image/IMG_4670.JPEG">
+                <img src="/image/food_image/IMG_5847.JPG">
+                <img src="/image/food_image/IMG_9121.JPG">
+                <img src="/image/food_image/IMG_9133.JPEG">
+            </div>
+
+            <br><br><br><br><br><br><br>
+            <h1>.</h1>
+            <h1>.</h1>
+            <h1>.</h1><br><br><br>
+            <h1 id="잘먹자">" 하지만 요리하는 것보다 중요한건 잘 먹는것!!!! "</h1>
+            <p id="연어">특히... 연어는 정말 최고입니다.<br></p>
+            <br><br><br><br><br>
+
+            <div class="salmon">
+                <img src="/image/food_image/salmon/IMG_1477.JPEG">
+                <img src="/image/food_image/salmon/IMG_3597.JPG">
+                <img src="/image/food_image/salmon/IMG_4038.JPEG">
+                <img src="/image/food_image/salmon/IMG_4227.JPEG">
+                <img src="/image/food_image/salmon/IMG_5967.JPEG">
+                <img src="/image/food_image/salmon/IMG_6849.JPG">
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- 하단 footer -->
+    <footer>
+        <div class="footContainer">
+            <div id="foottitle">CONTACT</div> <br />
+            <div>
+                E-mail : i_am_heej@naver.com<br />
+                Tel : 010-5756-6674<br />
+                SNS :<br />
+                <a class="footlink" href="https://blog.naver.com/devheej">
+                    <img src="/image/blog3.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.instagram.com/">
+                    <img src="/image/instagram.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.facebook.com/jhj100453">
+                    <img src="/image/facebook.png" alt=""></img></a>
+            </div>
+            <br />
+            <hr />
+            <div>Copyright 2024. 전희정 All rights reserved.</div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Song+Myung&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+/* 전체영역에서 여백을 없애줌 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    /* height: 200%;
+    margin: 0; */
+    font-family: 'NanumSquareNeo-Variable', sans-serif;
+    background-color: #f1f6f9;
+    
+}
+
+.home {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    line-height: 50px;
+    /* margin: 0 auto; */
+    color: rgb(0, 14, 58);
+}
+
+/* 네비게이션 바  */
+.navContainer {
+    width: 100%;
+    font-size: 20px;
+    background-color: #bac2d3;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    opacity: 0.9;
+    backdrop-filter: blur(30px);
+    
+}
+.navContainer a {
+    text-decoration:none;
+    color: rgb(0, 8, 54);
+}
+.navContainer a:active {
+    color: rgb(221, 227, 255);   
+}
+.navItem>div {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+#home_icon {
+    width:27px;
+    margin-top:15px;
+}
+
+/* ul li태그에 리스트 스타일을 없앰 */
+.navContainer ul li {
+    list-style: none;
+}
+
+/* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+#submenu a {
+    text-decoration: none;
+    color: #0b2688;
+}
+
+#submenu {
+    font-size: 16px;
+    width: 700px;
+    height: 0px;
+    color: black;
+    line-height: 50px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+/* submenu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
+#submenu>ul>li {
+    float: left;
+    width: 140px;
+    position: relative;
+}
+
+#submenu>ul>li:hover {
+    /* font-weight: bold; */
+    background-color: rgb(122, 136, 164);
+    color : white;
+    transition: ease 0.5s;
+    
+
+}
+
+#submenu>ul>li>a:hover {
+    color: white;
+    transition: ease 0.5s;
+}
+
+#submenu>ul>li>ul {
+    width: 140px;
+    display: none;
+    position: absolute;
+    font-size: 13px;
+    background-color: white;
+}
+
+#submenu>ul>li:hover>ul {
+    display: block;
+}
+
+#submenu>ul>li>ul>li:hover {
+    background: rgb(216, 216, 216);
+    transition: ease 0.5s;
+
+}
+
+
+/* 메인 이미지 */
+.mainImgContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 200px); 
+    height: 650px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center; 
+}
+
+#mainImg {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.centeredText {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 40px; 
+    width: 350px;
+    height: 100px;
+    border: 2px solid #000; 
+    font-size: 24px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    line-height: 1.5; 
+    font-family:'Times New Roman', Times, serif;
+    /* font-weight: bold; */
+    font-style: italic;
+    font-size: 40px;
+    animation: shrinkAnimation 0.7s ease-in-out forwards;
+}
+ 
+@keyframes shrinkAnimation {
+    0% {
+        transform: translate(-50%, -65%) ;
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) ;
+        opacity: 1;
+    }
+}
+
+#centeredText_kor {
+    font-size: 20px;
+    color:rgb(76, 100, 122);
+    /* font-family: 'Nanum-Myeongjo'; */
+}
+
+
+/* 본문 내용 스타일 */
+.content {
+    display: flex;
+    max-width: 900px; 
+    margin: 0 auto;
+    justify-content: space-around;
+    margin: 50px auto; 
+    padding-top: 50px; 
+    position: relative; 
+}
+
+.content_title{
+    text-align: center;
+}
+.content_title >h1 {
+    font-size:40px;
+}
+.content_name_kor {
+    margin-left: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(35, 60, 129);
+}
+.content_name_eng {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(99, 121, 180);
+}
+
+.leftText, .rightText {
+    width: 45%; 
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.leftText p, .rightText p {
+    margin-bottom: 20px; 
+}
+
+
+/* 세로 구분선 */
+.separator {
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #333;
+}
+
+/* 가로 구분선 */
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin: 50px 0;
+}
+
+
+/* 문의하기 폼 */
+.contact-form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.contact-form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.input-box {
+    width:80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+
+.submit-button {
+    margin-top: 20px;
+    justify-content: center;
+    width:50%;
+    background-color: #172f7b;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.submit-button:hover {
+    background-color: #6686ec;
+    transition:0.2s;  
+}
+
+/* 개인정보 활용 동의 부분 */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+#agree, #I_agree {
+    font-size: 15px;
+    color: rgb(54, 54, 54);
+}
+
+
+/* 푸터 */
+footer {
+    font-weight: lighter;
+    padding: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #737b88;
+    color: white;
+    font-size: 15px;
+    margin-top: 200px;
+    line-height: 2em;
+}
+
+.footContainer img {
+    width: 50px;
+}
+
+#foottitle {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#my_photo {
+    width: 200px;
+    border-radius: 100%;
+    box-shadow: 80px 0px 0px #bbc0c2;
+}
+
+.image_block {
+    margin-bottom: 40px;
+}
+
+.content_icon {
+    width: 25px;
+    border-radius: 100%;
+    vertical-align: middle;
+
+}
+
+.content_icon_block {
+    margin : 10px;
+}
+

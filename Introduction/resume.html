@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="/index.css">
+    <link type="text/css" rel="stylesheet" href="/Introduction/resume.css">
+    <script src="/index.js"></script>
+    <title>이력서 페이지</title>
+</head>
+
+<body>
+    <!-- 상단 navbar -->
+    <navbar>
+        <div class="navContainer">
+            <div class="home">
+                <a href="/index.html"><img id="home_icon" src="/image/home_icon.png"></a>
+            </div>
+
+            <div id="submenu">
+                <ul>
+                    <li><a href="#">Introduction</a>
+                        <ul>
+                            <!-- 이력서 열람할때 아이디, 비밀번호 입력  -->
+                            <li><a href="/Introduction/resume.html" onclick="return authenticate()">이력서</a></li>
+                            <li><a href="/Introduction/self_intro.html">자기소개서</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Career</a>
+                        <ul>
+                            <li><a href="/Career/capability.html">개인 역량</a></li>
+                            <li><a href="/Career/certificate.html">자격증</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Project</a>
+                        <ul>
+                            <li><a href="/Project/project1.html">p-실무 프로젝트</a></li>
+                            <li><a href="/Project/project2.html">졸업 프로젝트</a></li>
+                            <li><a href="/Project/project3.html">개인 프로젝트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Study</a>
+                        <ul>
+                            <li><a href="/Study/time_table.html">시간표</a></li>
+                            <li><a href="/Study/study_record.html">공부 기록</a></li>
+                            <li><a href="/Study/grade_calc.html">학점계산기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Hobby</a>
+                        <ul>
+                            <li><a href="/Hobby/cook.html">요리 하기</a></li>
+                            <li><a href="/Hobby/photo.html">사진 찍기</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </div>
+    </navbar>
+
+
+    <main>
+        <h1>이력서</h1>
+        <!-- 이력서 표   -->
+        <div class="resume">
+            <h2>1. 기초 자료</h2>
+            <table class="resume_table" >
+                <tr>
+                    <td id="td_img" rowspan="6">
+                        <img id="resume_img" src="/image/jhj.jpg" alt="증명사진" />
+                    </td>
+
+                    <td class="td_title">성 명</td>
+                    <td>전희정</td>
+                    <td class="td_title">한 문</td>
+                    <td id="hanja">全熙貞</td>
+                </tr>
+                <tr>
+                    <td class="td_title">주민등록번호</td>
+                    <td colspan="3">010216-4******</td>
+                </tr>
+                <tr>
+                    <td class="td_title">E-mail</td>
+                    <td colspan="3">i_am_heej@naver.com</td>
+                </tr>
+                <tr>
+                    <td class="td_title">전화번호</td>
+                    <td>031-769-6674</td>
+                    <td class="td_title">휴대폰</td>
+                    <td>010-5756-6674</td>
+                </tr>
+                <tr>
+                    <td class="td_title">우편번호</td>
+                    <td>12783</td>
+                    <td class="td_title">비상연락처</td>
+                    <td>010-5754-6674</td>
+                </tr>
+                <tr>
+                    <td class="td_title">주소</td>
+                    <td colspan="3">경기도 광주시 송정동 335번길</td>
+                </tr>
+            </table>
+
+            <br />
+            <h2>2. 학력사항</h2>
+            <table class="resume_table">
+                <tr>
+                    <th class="td_title">기간</th>
+                    <th class="td_title">상세내용</th>
+                    <th class="td_title">비고</th>
+                </tr>
+                <tr>
+                    <td>2008.03 ~ 2014.02</td>
+                    <td>탄벌초등학교</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>2014.03 ~ 2017.02</td>
+                    <td>탄벌중학교</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>2017.03 ~ 2020.02</td>
+                    <td>양서고등학교</td>
+                    <td>졸업</td>
+                </tr>
+                <tr>
+                    <td>2021.03 ~ </td>
+                    <td>가천대학교</td>
+                    <td>재학</td>
+                </tr>
+            </table>
+
+            <br />
+            <h2>3. 경력사항</h2>
+            <table class="resume_table">
+                <tr>
+                    <th class="td_title">활동기간</th>
+                    <td>2023.11 ~ 2024.06</td>
+                </tr>
+                <tr>
+                    <th class="td_title">활동월수</th>
+                    <td>7개월</td>
+                </tr>
+                <tr>
+                    <th class="td_title">업무처</th>
+                    <td>파이팀(team.py)</td>
+                </tr>
+                <tr>
+                    <th class="td_title">담당업무</th>
+                    <td>AI 모델링, 프로젝트 통합</td>
+                </tr>
+            </table>
+
+            <br />
+            <h2>4. 개인능력 및 장단점</h2>
+            <table class="resume_table">
+                <tr height="30">
+                    <td rowspan="4" class="td_title">자격증 및 포상</td>
+                    <td colspan="3">정보처리기사</td>
+                    <td colspan="1">한국산업인력공단</td>
+                </tr>
+                <tr height="30">
+                    <td colspan="3">SQLD</td>
+                    <td colspan="1">한국데이터산업진흥원</td>
+                </tr>
+                <tr height="30">
+                    <td colspan="3">네트워크관리사 2급</td>
+                    <td colspan="1">한국정보통신자격협회</td>
+                </tr>
+                <tr height="30">
+                    <td colspan="3">운전면허증 1종 보통</td>
+                    <td colspan="1">경찰청</td>
+                </tr>
+
+                <tr height="30">
+                    <td rowspan="2" class="td_title">컴퓨터능력</td>
+                    <td colspan="2">Pytorch</td>
+                    <td class="td_title">상/중/하</td>
+                    <td>상</td>
+                </tr>
+                <tr height="30">
+                    <td colspan="2">Spring Boot</td>
+                    <td class="td_title">상/중/하</td>
+                    <td>상</td>
+                </tr>
+                <tr height="30">
+                    <td rowspan="2" class="td_title">취미</td>
+                    <td colspan="2">독서</td>
+                    <td class="td_title">특기</td>
+                    <td>데이터 분석, AI 훈련</td> 
+                </tr>
+            </table>
+
+            <div id="pledge">
+                <br />위의 사실이 틀림이 없음을 서약합니다.<br />
+                작성일 2023년 11월 2일<br />
+                작성자 전희정(인)
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- 하단 footer -->
+    <footer>
+        <div class="footContainer">
+            <div id="foottitle">CONTACT</div> <br />
+            <div>
+                E-mail : i_am_heej@naver.com<br />
+                Tel : 010-5756-6674<br />
+                SNS :<br />
+                <a class="footlink" href="https://blog.naver.com/devheej">
+                    <img src="/image/blog3.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.instagram.com/">
+                    <img src="/image/instagram.png" href="" alt=""></img></a>
+                <a class="footlink" href="https://www.facebook.com/jhj100453">
+                    <img src="/image/facebook.png" alt=""></img></a>
+            </div>
+            <br />
+            <hr />
+            <div>Copyright 2024. 전희정 All rights reserved.</div>
+
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

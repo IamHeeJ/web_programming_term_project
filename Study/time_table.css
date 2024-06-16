@@ -1,0 +1,60 @@
+.time_table {
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-top : 120px;
+    padding: 40px;  
+    display: flex; 
+    justify-content: center; 
+}
+
+.time_table_2024 {
+    text-align: center;
+    width: 85%;
+    border-spacing: 7px; /* 셀 사이의 간격 설정 */
+}
+
+caption {
+    font-size: 30px;
+    font-weight: bold;
+    margin : 30px;
+}
+
+.time_table_2024 th {
+    background-color: rgb(216, 220, 224);
+    border-radius: 10px;
+    height: 50px;
+}
+.time_table_2024 td {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 50px;
+}
+
+/* 첫번째 열 너비 지정  */
+.time_table_2024 th:first-child,
+.time_table_2024 td:first-child {
+    width: 60px; 
+}
+#table_lunch td {
+    background-color: rgb(216, 220, 224);
+}
+#web-programming {
+    background-color: rgb(255, 184, 184);
+    font-weight: bold;
+    line-height: 160%;
+}
+#total-project {
+    background-color: rgb(255, 234, 143);
+    font-weight: bold;
+    line-height: 160%;
+}
+#NLP {
+    background-color: rgb(165, 214, 146);
+    font-weight: bold;
+    line-height: 160%;
+}
+#block-chain {
+    background-color: rgb(188, 198, 223);
+    font-weight: bold;
+    line-height: 160%;
+}

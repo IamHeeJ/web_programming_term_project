@@ -1,0 +1,64 @@
+.project3 {
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-top : 120px;
+    padding: 40px; 
+}
+/* index.css 의 (li,ul)스타일 효과 해제 */
+.project3 * {
+    all: unset;
+    all: revert;
+}
+.title {
+    text-align: center;
+}
+.main_title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.project3 fieldset {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 60px;
+}
+.project3 legend {
+    font-weight: bold;
+    text-align : center;
+    font-size: 20px;
+    margin : 0px;
+}
+
+/* 이미지 그룹 */
+.image_group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* 이미지 사이 간격 */
+    margin-bottom: 10px;
+}
+.image_group img {
+    width: 400px;
+    transition: 0.5s;
+}
+#D1:hover {
+    transform: scale(2,2);
+    transform-origin: 0% 0%;
+}
+#D2:hover {
+    transform: scale(2,2);
+    transform-origin: 100% 0%;
+}
+#D3:hover {
+    transform: scale(2,2);
+    transform-origin: 0% 100%;
+}
+#D4:hover {
+    transform: scale(2,2);
+    transform-origin: 100% 100%;
+}
+.image_group div {
+    text-align: center;
+}
+#gray-font {
+    color: #979797;
+    text-align: center;
+}

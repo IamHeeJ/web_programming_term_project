@@ -1,0 +1,180 @@
+.capability {
+    /* border: 1px dotted rgb(140, 148, 180);
+    border-radius: 25px; */
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-top : 120px;
+    padding: 40px;  
+}
+.capability > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ch_block {
+    font-size: 20px;
+    margin-bottom : 40px;
+}
+.chart {
+    text-align: center;
+    margin-top: 40px;
+}
+.pie-chart {
+    position: relative;
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  span.center{
+    background: #fff;
+    display : block;
+    position: absolute;
+    top:50%; left:50%;
+    width:100px; height:100px;
+    border-radius: 50%;
+    text-align:center; 
+    line-height: 100px;
+    font-size:30px;
+     transform: translate(-50%, -50%);
+  }
+  .pie-chart1{
+    animation: pie1 0.5s forwards;
+    margin: 10px;
+  }
+  @keyframes pie1{
+    0%{background : conic-gradient(#0a3050 0% 0%, #ffffff 0% 100%)}
+    6%{background : conic-gradient(#0a3050 0% 7%, #ffffff 0% 100%)}
+    12%{background : conic-gradient(#0a3050 0% 12%, #ffffff 0% 100%)}
+    18%{background : conic-gradient(#0a3050 0% 18%, #ffffff 0% 100%)}
+    25%{background : conic-gradient(#0a3050 0% 24%, #ffffff 0% 100%)}
+    33%{background : conic-gradient(#0a3050 0% 30%, #ffffff 0% 100%)}
+    38%{background : conic-gradient(#0a3050 0% 36%, #ffffff 0% 100%)}
+    44%{background : conic-gradient(#0a3050 0% 42%, #ffffff 0% 100%)}
+    50%{background : conic-gradient(#0a3050 0% 47%, #ffffff 0% 100%)}
+    56%{background : conic-gradient(#0a3050 0% 53%, #ffffff 0% 100%)}
+    62%{background : conic-gradient(#0a3050 0% 58%, #ffffff 0% 100%)}
+    68%{background : conic-gradient(#0a3050 0% 64%, #ffffff 0% 100%)}
+    75%{background : conic-gradient(#0a3050 0% 69%, #ffffff 0% 100%)}
+    82%{background : conic-gradient(#0a3050 0% 75%, #ffffff 0% 100%)}
+    88%{background : conic-gradient(#0a3050 0% 80%, #ffffff 0% 100%)}
+    94%{background : conic-gradient(#0a3050 0% 85%, #ffffff 0% 100%)}
+    100%{background : conic-gradient(#0a3050 0% 90%, #ffffff 80% 100%)}
+  }
+
+  .pie-chart2{
+    animation: pie2 0.5s forwards;
+    margin: 10px;
+  }
+  @keyframes pie2{
+    0%{background : conic-gradient(#3b7bac 0% 0%, #ffffff 0% 100%)}
+    6%{background : conic-gradient(#3b7bac 0% 5%, #ffffff 0% 100%)}
+    12%{background : conic-gradient(#3b7bac 0% 10%, #ffffff 0% 100%)}
+    18%{background : conic-gradient(#3b7bac 0% 15%, #ffffff 0% 100%)}
+    25%{background : conic-gradient(#3b7bac 0% 20%, #ffffff 0% 100%)}
+    33%{background : conic-gradient(#3b7bac 0% 25%, #ffffff 0% 100%)}
+    38%{background : conic-gradient(#3b7bac 0% 30%, #ffffff 0% 100%)}
+    44%{background : conic-gradient(#3b7bac 0% 35%, #ffffff 0% 100%)}
+    50%{background : conic-gradient(#3b7bac 0% 40%, #ffffff 0% 100%)}
+    56%{background : conic-gradient(#3b7bac 0% 45%, #ffffff 0% 100%)}
+    62%{background : conic-gradient(#3b7bac 0% 50%, #ffffff 0% 100%)}
+    68%{background : conic-gradient(#3b7bac 0% 55%, #ffffff 0% 100%)}
+    75%{background : conic-gradient(#3b7bac 0% 60%, #ffffff 0% 100%)}
+    82%{background : conic-gradient(#3b7bac 0% 65%, #ffffff 0% 100%)}
+    88%{background : conic-gradient(#3b7bac 0% 70%, #ffffff 0% 100%)}
+    94%{background : conic-gradient(#3b7bac 0% 75%, #ffffff 0% 100%)}
+    100%{background : conic-gradient(#3b7bac 0% 80%, #ffffff 80% 100%)}
+  }
+
+  .pie-chart3{
+    animation: pie3 0.5s forwards;
+    margin: 10px;
+  }
+  @keyframes pie3{
+    0%{background : conic-gradient(#7ec2f0 0% 0%, #ffffff 0% 100%)}
+    6%{background : conic-gradient(#7ec2f0 0% 5%, #ffffff 0% 100%)}
+    12%{background : conic-gradient(#7ec2f0 0% 10%, #ffffff 0% 100%)}
+    18%{background : conic-gradient(#7ec2f0 0% 15%, #ffffff 0% 100%)}
+    25%{background : conic-gradient(#7ec2f0 0% 20%, #ffffff 0% 100%)}
+    33%{background : conic-gradient(#7ec2f0 0% 25%, #ffffff 0% 100%)}
+    38%{background : conic-gradient(#7ec2f0 0% 30%, #ffffff 0% 100%)}
+    44%{background : conic-gradient(#7ec2f0 0% 35%, #ffffff 0% 100%)}
+    50%{background : conic-gradient(#7ec2f0 0% 40%, #ffffff 0% 100%)}
+    56%{background : conic-gradient(#7ec2f0 0% 45%, #ffffff 0% 100%)}
+    62%{background : conic-gradient(#7ec2f0 0% 50%, #ffffff 0% 100%)}
+    68%{background : conic-gradient(#7ec2f0 0% 55%, #ffffff 0% 100%)}
+    75%{background : conic-gradient(#7ec2f0 0% 60%, #ffffff 0% 100%)}
+    82%{background : conic-gradient(#7ec2f0 0% 65%, #ffffff 0% 100%)}
+    88%{background : conic-gradient(#7ec2f0 0% 70%, #ffffff 0% 100%)}
+    94%{background : conic-gradient(#7ec2f0 0% 75%, #ffffff 0% 100%)}
+    100%{background : conic-gradient(#7ec2f0 0% 80%, #ffffff 80% 100%)}
+  }
+
+.ch1 {
+    color: #0a3050;
+    display: inline-block;
+}
+.ch2 {
+    color: #3b7bac;
+    display: inline-block;
+    margin-left : 55px;
+}
+.ch3 {
+    color: #7ec2f0;
+    display: inline-block;
+    margin-left : 55px;
+}
+
+
+/* 스킬 카드 */
+.capability_card {
+  margin-top: 100px;
+  /* margin-bottom: 50px; */
+}
+.capability > ul {
+    /* list-style-type: disc;  */
+    padding-left: 20px;   
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+  
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgb(185, 185, 185);
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 50px;
+}
+.card1 img , .card6 img {
+  height: 100px;
+  margin: 10px;
+}
+.card2 img, .card3 img, .card5 img {
+  height: 58px;
+  margin: 10px;
+}
+.card4 img {
+  height: 48px;
+  margin: 10px;
+}
+.capability hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.capability h2 {
+  margin-left: 5px;
+  color:#0069be;
+  font-size: 27px;
+}
+#python {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  height: 70px;
+}
+.card_img {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; 
+}

@@ -1,0 +1,95 @@
+.study_record {
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-top : 120px;
+    padding: 40px;  
+}
+.study_record > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#iframe_screen {
+    /* border: 1px solid black; */
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+#iframe_screen iframe {
+    width: 330px;
+    height: 650px;
+    border: 15px solid black;
+    border-top-width: 50px;
+    border-bottom-width: 40px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.power_on {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 290px;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.velog_button {
+    width: 90px;
+    background-color: rgb(65, 214, 165);
+    padding : 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 5px 5px 20px gray;  
+}
+
+.blog_button {
+    width: 90px;
+    background-color: rgb(44, 194, 64);
+    padding : 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 5px 5px 20px gray;  
+}
+
+.velog_button:hover {
+    background-color: rgb(131, 235, 200);
+}
+.blog_button:hover {
+    background-color: rgb(112, 231, 128);
+}
+
+/* 전원 끄기 버튼 */
+.power_off {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 290px;
+    justify-content: center;
+}
+
+.power_button {
+    background-color: black;
+    padding : 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 5px 5px 20px gray;  
+
+}
+.power_button a, .velog_button a, .blog_button a {
+    text-decoration: none;
+    color: white;
+}
+.power_button:hover {
+    background-color: gray;
+}
+
+#gray_text {
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+}
